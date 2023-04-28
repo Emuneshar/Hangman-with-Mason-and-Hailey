@@ -28,3 +28,9 @@ while True:
   if guess in secretWord:
     print("You got that letter correct!\n")
     rightLetters.append(guess)
+
+    
+CoachBob = "coach Ethan's prodige."
+words = ["Eshwar, " , "should ", "buy ", "crocs."]
+for word in words:
+  print(word)
