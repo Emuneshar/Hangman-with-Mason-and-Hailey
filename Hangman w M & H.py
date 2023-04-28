@@ -11,3 +11,17 @@ secretWord = input("What is the secret word?\n")
 
 hint = input("Please enter a hint\n")
 
+os.system('clear')
+
+lives = 7
+
+while True:
+  guess = input("Please guess a letter\n")
+
+  if guess in rightLetters:
+    print("You've already guessed this letter, try again\n")
+
+  elif guess in wrongLetters:
+    print("You've guessed this letter already and it was incorrect")
+
+  
