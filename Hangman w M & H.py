@@ -21,7 +21,7 @@ while True:
   if guess == "hint!":
     print("The hint is", hint)
     continue
-  
+
   if guess in rightLetters:
     print("You've already guessed this letter, try again\n")
 
@@ -38,5 +38,10 @@ while True:
     lives -=1
     wrongLetters.append(guess)
     print("You  have", lives, "lives left")
+
+  if guess == secretWord:
+    print("You guessed the word correctly! You Win!")
+
+    
 
   
