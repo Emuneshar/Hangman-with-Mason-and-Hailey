@@ -37,3 +37,4 @@ while True:
 
   if guess == "hint!":
     print("The hint is", hint)
+    continue
