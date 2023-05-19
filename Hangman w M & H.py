@@ -29,4 +29,6 @@ while True:
     print("You got that letter correct!\n")
     rightLetters.append(guess)
 
-    
+  if guess not in secretWord:
+    print("That letter is wrong")
+    lives -=1
