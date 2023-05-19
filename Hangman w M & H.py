@@ -30,7 +30,3 @@ while True:
     rightLetters.append(guess)
 
     
-CoachBob = "coach Ethan's prodige."
-words = ["Eshwar, " , "should ", "buy ", "crocs."]
-for word in words:
-  print(word)
