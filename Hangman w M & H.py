@@ -25,7 +25,7 @@ os.system('cls')
 lives = 7
 
 while True:
-  t = input("Please guess a letter\n")
+  guess = input("Please guess a letter\n")
   
 
   if lives < 0:
