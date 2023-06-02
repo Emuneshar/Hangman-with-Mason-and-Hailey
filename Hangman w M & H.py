@@ -1,5 +1,13 @@
 import os
 
+
+def wordChecker(secretWordTwo, correctLetters):
+  for x in secretWordTwo:
+    if x not in correctLetters:
+      return False
+
+
+
 rightLetters = []
 wrongLetters = []
 
@@ -11,12 +19,16 @@ secretWord = input("What is the secret word?\n")
 
 hint = input("Please enter a hint\n")
 
-os.system('clear')
+os.system('cls')
 
 lives = 7
 
 while True:
-  guess = input("Please guess a letter\n")
+  t = input("Please guess a letter\n")
+  guess = t.lower()
+
+  if lives < 0:
+    break
 
   if guess == "hint!":
     print("The hint is", hint)
@@ -41,6 +53,8 @@ while True:
 
   if guess == secretWord:
     print("You guessed the word correctly! You Win!")
+
+  
 
     
 
