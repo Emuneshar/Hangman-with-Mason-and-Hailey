@@ -62,8 +62,10 @@ while True:
   if guess == secretWord:
     print("You guessed the word correctly! You Win!")
 
-  
-
-    
+  if wordChecker(secretWord, rightLetters) != False:
+    print("You guessed the word correctly!\n")
+    print("The secret word was", secretWord, "!\n")
+    print("You win!")
+    break
 
   
