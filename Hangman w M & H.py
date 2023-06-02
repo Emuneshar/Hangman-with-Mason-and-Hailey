@@ -35,6 +35,13 @@ while True:
     print("The hint is", hint)
     continue
 
+  if len(guess) > 1:
+    if guess == secretWord:
+      print("You got it right! Great job!\n")
+    else:
+      print("You got it wrong, sorry!\n")
+      lives -= 1
+
   if guess in rightLetters:
     print("You've already guessed this letter, try again\n")
 
