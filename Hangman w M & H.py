@@ -16,6 +16,7 @@ print("One player will enter a secret word\n")
 print("The second player will have to guess the secret word\n")
 
 secretWord = input("What is the secret word?\n")
+secretWord = secretWord.lower()
 
 hint = input("Please enter a hint\n")
 
@@ -25,7 +26,7 @@ lives = 7
 
 while True:
   t = input("Please guess a letter\n")
-  guess = t.lower()
+  
 
   if lives < 0:
     break
